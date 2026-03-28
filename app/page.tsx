@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   const localBusinessJsonLd = {
     "@context": "https://schema.org",
@@ -77,9 +79,17 @@ export default function Home() {
         <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6 md:px-10">
           <a
             href="#home"
-            className="font-display text-xl font-semibold tracking-tight text-slate-900"
+            className="inline-flex items-center gap-3 font-display text-xl font-semibold tracking-tight text-slate-900"
           >
-            IBI Vet
+            <Image
+              src="/ibi_vet_logo.svg"
+              alt="IBI Vet logo"
+              width={36}
+              height={43}
+              className="h-[43px] w-[36px]"
+              priority
+            />
+            <span>IBI Vet</span>
           </a>
           <nav className="hidden items-center gap-6 text-sm text-slate-700 md:flex">
             <a href="#services" className="transition hover:text-teal-700">
