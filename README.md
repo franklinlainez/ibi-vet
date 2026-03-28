@@ -1,2 +1,2 @@
 # ibi-vet
-Veterinary website
+Veterinary promotional SPA
