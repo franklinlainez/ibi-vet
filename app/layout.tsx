@@ -52,6 +52,9 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: "/ibi_vet_logo.svg",
+  },
 };
 
 export const viewport = {
